@@ -1,0 +1,1 @@
+{"name":"Local: Assign3a","url":"/mnt/c/Users/Rohit Saini/Code/C program/DS-1/Assign3a.c","tests":[{"id":1631074137734,"input":"5\n1\nq 2 9 a\nw 2 9 a\nq 1 9 a\nj 4 9 a\nk 5 9 a\nx 3 8 a\n5\n9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/mnt/c/Users/Rohit Saini/Code/C program/DS-1/Assign3a.c","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: test","url":"/mnt/c/Users/Rohit Saini/Code/C++/Youtube Course/test.c","tests":[{"id":1632414354084,"input":"","output":"i = 1\ni = 2\ni = 3\ni = 4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/mnt/c/Users/Rohit Saini/Code/C++/Youtube Course/test.c","group":"local","local":true}

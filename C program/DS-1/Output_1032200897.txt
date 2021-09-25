@@ -1,0 +1,108 @@
+// Rohit Saini  Prn : 1032200897
+//roll no : 18
+//Pannel: B2
+Enter Number of Books: 8
+
+============Library Menu============
+1.Input Details
+2.Display Details
+3.Cost Less than 500
+4.Cost More than 500
+5.Delete Duplicate Entries
+6.Exit
+Input Choice: 1
+Name: q
+Id: 1
+Cost: 200
+Name: w
+Id: 2
+Cost: 600
+Name: e
+Id: 3
+Cost: 700
+Name: r
+Id: 4
+Cost: 1200
+Name: y
+Id: 5
+Cost: 900
+Name: q
+Id: 1
+Cost: 200
+Name: p
+Id: 90
+Cost: 1800
+Name: m
+Id: 88
+Cost: 1100
+
+============Library Menu============
+1.Input Details
+2.Display Details
+3.Cost Less than 500
+4.Cost More than 500
+5.Delete Duplicate Entries
+6.Exit
+Input Choice: 2
+Name : q        Id: 1   Price 200.000000
+Name : w        Id: 2   Price 600.000000
+Name : e        Id: 3   Price 700.000000
+Name : r        Id: 4   Price 1200.000000
+Name : y        Id: 5   Price 900.000000
+Name : q        Id: 1   Price 200.000000
+Name : p        Id: 90  Price 1800.000000
+Name : m        Id: 88  Price 1100.000000
+
+============Library Menu============
+1.Input Details
+2.Display Details
+3.Cost Less than 500
+4.Cost More than 500
+5.Delete Duplicate Entries
+6.Exit
+Input Choice: 3
+Name : q        Id: 1   Price 200.000000
+Name : q        Id: 1   Price 200.000000
+Number of book whose price is less than 500 : 2
+============Library Menu============
+1.Input Details
+2.Display Details
+3.Cost Less than 500
+4.Cost More than 500
+5.Delete Duplicate Entries
+6.Exit
+Input Choice: 4
+Number of book whose price is more than 500 : 6 
+============Library Menu============
+1.Input Details
+2.Display Details
+3.Cost Less than 500
+4.Cost More than 500
+5.Delete Duplicate Entries
+6.Exit
+Input Choice: 5
+
+============Library Menu============
+1.Input Details
+2.Display Details
+3.Cost Less than 500
+4.Cost More than 500
+5.Delete Duplicate Entries
+6.Exit
+Input Choice: 2
+Name : q        Id: 1   Price 200.000000
+Name : w        Id: 2   Price 600.000000
+Name : e        Id: 3   Price 700.000000
+Name : r        Id: 4   Price 1200.000000
+Name : y        Id: 5   Price 900.000000
+Name : p        Id: 90  Price 1800.000000
+Name : m        Id: 88  Price 1100.000000
+
+============Library Menu============
+1.Input Details
+2.Display Details
+3.Cost Less than 500
+4.Cost More than 500
+5.Delete Duplicate Entries
+6.Exit
+Input Choice: 6

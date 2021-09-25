@@ -1,0 +1,1 @@
+{"name":"Local: vector","url":"/mnt/c/Users/Rohit Saini/Code/C++/Youtube Course/vector.cpp","tests":[{"id":1632232789133,"input":"","output":"1 7 3 \n1 7 3 \n1 7 3 1 7 3 \n50 50 50 \n1 3 7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/mnt/c/Users/Rohit Saini/Code/C++/Youtube Course/vector.cpp","group":"local","local":true}
