@@ -127,6 +127,8 @@ void circular_place_order() // Take inputs and order
 }
 void circular_dispatch_order()
 {
+    if(front1==-1)
+            front1 = 0;
     if(circular_is_empty()==0 )
     {
         printf("\nDispatched order ID is %d! ", P[front1].ID);
@@ -139,10 +141,11 @@ void circular_dispatch_order()
     }
 }
 void circular_display()
-{   
+{   if(front1==-1)
+            front1 = 0;
     if(circular_is_empty()==0)
     {
-        printf("\nThe Pending orders are: ");
+        printf("\nThe orders are: ");
         for (int i = front1 ; i <= rear1; i++)
         {
             printf("\nID: %d", P[i].ID);

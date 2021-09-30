@@ -2,10 +2,8 @@
 
 int main()
 {
-    int a = 10;
-    a++;
-    ++a;
-    a = ++a + a++;
-    printf("%d\n", a);
+    char a[10];
+    scanf("%s", a);
+    int b = strlen(a);
     return 0;
 }

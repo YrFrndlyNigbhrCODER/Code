@@ -2,27 +2,27 @@
 using namespace std;
 int main()
 {
-    int n,q;
-    cin >> n>> q;
-    int** seq = new int* [n];
-    for(int i=0;i<n;i++) 
+    int n, queries;
+    cin >> n >> queries;
+    int **total = new int *[n];
+    for (int i = 0; i < n; i++)
     {
-        int a;
-        cin>>a;
-        int* b=new int [a];
-        for(int j=0;j<a;j++) 
+        int a; // number of element in 1st array
+        cin >> a;
+        int *b = new int[a];
+        for (int j = 0; j < a; j++)
         {
-            int e;
-            cin>>e;
-            b[j]=e;
+            int value;
+            cin >> value;
+            b[j] = value;
         }
-        *(seq+i)=b;
+        *(total + i) = b;
     }
-for(int i=0;i<q;i++) 
+for(int i=0;i<queries;i++) 
 {
   int r,s;
   cin >> r >> s;
-  cout << seq[r][s] << endl;
+  cout << total[r][s] << endl;
 }
 return 0;
 }

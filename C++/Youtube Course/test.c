@@ -1,14 +1,14 @@
 #include <stdio.h>
- 
+#include<stdlib.h>
+
  void func(){
  	static int i = 0;
  	i++;
  	printf("i = %d\n",i);
  }
-int main(){
+int main(void){
 	func();	
 	func();
 	func();
 	func();
-	return 0;
 }
