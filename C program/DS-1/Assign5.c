@@ -1,17 +1,17 @@
 #include<stdio.h>
 #include<stdlib.h>
-#define max 3
+int max = 3;
 struct order
 {
     char name[20];
     int ID, quantity;
     char address[30];
 };
-struct order P[max];
+struct order P[3];
 int rear = -1;
 int front = -1;
-int rear1 = -1;
-int front1 = -1;
+int rear1 = 0;
+int front1 = 0;
 int ID = 1;
 
 int is_full()
@@ -83,35 +83,17 @@ void display()
         printf("Nothing to show");    
     }
 }
-int circular_is_full()
-{
-    if((rear1 +1)%max == front1)
-    {
-        return 1;
-    }
-    else
-    {
-        return 0;
-    }
-}
-int circular_is_empty()
-{
-    if(front1 == rear1+1 )
-    {
-        return 1;
-    }
-    else
-    {
-        return 0;
-    }
-}
+
 void circular_place_order() // Take inputs and order
 {
-    if(circular_is_full()==0)
+    int ma1 = max + 1;
+    if (front1 == (rear1 + 1) % ma1)
     {
-        if(front1==-1)
-            front1 = 0;
-        rear1 = (rear1 + 1) % max;
+        printf("\nOrder is Full!");
+    }
+    else
+    {
+        rear1 = (rear1 + 1) % ma1;
         P[rear1].ID = ID++;
         printf("Enter Name: ");
         scanf("%s", P[rear1].name);
@@ -119,42 +101,35 @@ void circular_place_order() // Take inputs and order
         scanf("%s", P[rear1].address);
         printf("Enter quantity: ");
         scanf("%d", &P[rear1].quantity);
+
     }    
-    else
-    {
-        printf("\nOrder is Full!");
-    }
 }
 void circular_dispatch_order()
 {
-    if(front1==-1)
-            front1 = 0;
-    if(circular_is_empty()==0 )
-    {
-        printf("\nDispatched order ID is %d! ", P[front1].ID);
-        front1++;
-    }
+    int ma1 = max + 1;   
+    if (rear1 == front1 )
+        printf("\nNo more orders to dispatched! ");
     else
     {
-        printf("\nNo more orders to dispatched! ");
-        front1 = -1;
+        front1 = (front1 + 1) % (ma1);
+        printf("\nDispatched order ID is %d! ", P[front1].ID);
     }
 }
 void circular_display()
-{   if(front1==-1)
-            front1 = 0;
-    if(circular_is_empty()==0)
+{
+    int ma1 = max + 1;
+    if (rear1 == front1)
     {
-        printf("\nThe orders are: ");
-        for (int i = front1 ; i <= rear1; i++)
-        {
-            printf("\nID: %d", P[i].ID);
-        }
+        printf("Nothing to show");
+        return;
     }
-    else
+    printf("\nThe orders are: ");
+    int i;
+    for (i = front1 + 1; i != rear1 ; i = (i+1)%ma1)
     {
-        printf("Nothing to show");    
+        printf("\nID: %d", P[i].ID);
     }
+    printf("\nID: %d", P[i].ID);
 }
 void linear_queue()
 {

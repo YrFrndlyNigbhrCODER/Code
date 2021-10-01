@@ -153,22 +153,22 @@ void fasttranspose(int b[k + 1][3], int ft[k + 1][3])
     }
     for (int j = 1; j < k + 1; j++)
     {
-        a1[b[j][1]]+=1;
+        a1[b[j][1]]+=1;     // count no of non zero in each column
     }
 
     b1[0] = 1;
     for (int x = 1; x < column; x++)
     {
-        b1[x] = a1[x - 1] + b1[x - 1];
+        b1[x] = a1[x - 1] + b1[x - 1];  //index
     }
     ft[0][0] = b[0][1];
     ft[0][1] = b[0][0];
     ft[0][2] = b[0][2];
     for (int i = 1; i < k + 1; i++)
     {
-        ft[b1[b[i][1]]][0] = b[i][1];
-        ft[b1[b[i][1]]][1] = b[i][0];
-        ft[b1[b[i][1]]][2] = b[i][2];
+        ft[b1[b[i][1]]][0] = b[i][1];   //column
+        ft[b1[b[i][1]]][1] = b[i][0];   //row
+        ft[b1[b[i][1]]][2] = b[i][2];   //Value
         b1[b[i][1]] += 1;
     }
     printf("\nFast Transpose Matrix: \n");
@@ -207,7 +207,7 @@ void addsparse(int b[k + 1][3], int b2[k2 + 1][3])
                 }
                 else
                 {
-                    if(b[i][1] > b2[j][1])      // if column value is greater in second then copy first to result
+                    if(b[i][1] > b2[j][1])      // if column value is greater in first then copy second to result
                     {
                         b3[x][0] = b2[j][0];
                         b3[x][1] = b2[j][1];
